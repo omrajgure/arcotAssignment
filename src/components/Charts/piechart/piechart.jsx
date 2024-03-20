@@ -21,6 +21,7 @@ export const Piechart = ({ data }) => {
     "#FFD07A",
   ];
 
+  // setting the platform as true or false based on toggle
   const [platform, set_platform] = useState(false);
   const handleToggle = () => {
     set_platform((prevval) => !prevval);
@@ -55,6 +56,7 @@ export const Piechart = ({ data }) => {
         <ResponsiveContainer width="100%" height={300}>
           <PieChart>
             <Pie
+              // setting the data based on toggle
               data={Object.entries(
                 !platform
                   ? data[0].usage_statistics.by_country

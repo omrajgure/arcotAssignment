@@ -17,6 +17,8 @@ import {
 } from "recharts";
 export const Linechart = ({ data }) => {
   const [weekday, set_weekday] = useState(false);
+
+  // setting weekday as true or false based on toggle
   const handleToggle = () => {
     set_weekday((prevVal) => !prevVal);
   };
@@ -50,6 +52,7 @@ export const Linechart = ({ data }) => {
           <LineChart
             width={500}
             height={300}
+            // if weekday is true then weekdays data is passed else dayWise
             data={
               !weekday
                 ? data[0].response_times.day_wise
@@ -73,7 +76,6 @@ export const Linechart = ({ data }) => {
               stroke="rgb(69, 69, 255)"
               activeDot={{ r: 8 }}
             />
-            {/* <Line type="monotone" dataKey="" stroke="#82ca9d" /> */}
           </LineChart>
         </ResponsiveContainer>
       </div>

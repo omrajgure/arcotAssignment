@@ -6,6 +6,7 @@ import messages from "../../assets/messages.png";
 import bell from "../../assets/bell.png";
 import MenuIcon from "@mui/icons-material/Menu";
 export const Navbar = ({ set_hamburgerClicked }) => {
+  // hamburger icon in mobile view
   const handlehamburgerClicked = () => {
     set_hamburgerClicked((prevval) => !prevval);
   };

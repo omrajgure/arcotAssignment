@@ -5,6 +5,7 @@ import FormGroup from "@mui/material/FormGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
 export const Insights = ({ data }) => {
+  // setting category as true or false based on toggle
   const [category, set_category] = useState(false);
 
   const handleToggle = () => {
@@ -36,6 +37,7 @@ export const Insights = ({ data }) => {
         </FormControl>
       </div>
 
+      {/* data is conditionally rendered based on value of category */}
       <div className={styles.Insights}>
         <div
           className={`${!category ? styles.colour_one : styles.colour_four} ${
