@@ -1,0 +1,56 @@
+.wrapper {
+  height: 21rem;
+  width: 35%;
+  border-radius: 12px;
+  margin-top: 2rem;
+  background-color: white;
+  padding: 2rem;
+  padding-top: 1rem;
+}
+.Insights {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  gap: 10px;
+}
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 1rem;
+  width: 20rem;
+  padding: 1rem;
+  border-radius: 25px;
+}
+.colour_one {
+  background-color: rgb(69, 69, 255);
+}
+.colour_two {
+  background-color: lightgreen;
+}
+.colour_three {
+  background-color: orangered;
+}
+.colour_four {
+  background-color: #ffd07a;
+}
+
+.headingDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1100px) {
+  .wrapper {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 570px) {
+  .card {
+    width: 15rem;
+  }
+}
