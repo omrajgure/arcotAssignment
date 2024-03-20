@@ -2,6 +2,7 @@ import { Navbar } from "./components/navbar/navbar";
 import { Hero } from "./components/hero/hero";
 import { useState } from "react";
 function App() {
+  // for mobile view
   const [hamburgerClicked, set_hamburgerClicked] = useState(false);
 
   return (
